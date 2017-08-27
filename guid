@@ -1,0 +1,12 @@
+根据65536，2的16次方，然后取1到65536 - 1 的数转成4位的16进制。
+
+方法一：
+//JS生成GUID函数,类似.net中的NewID();
+function S4() 
+{   
+   return (((1+Math.random())*0x10000)|0).toString(16).substring(1);   
+}    
+function NewGuid() 
+{   
+   return (S4()+S4()+"-"+S4()+"-"+S4()+"-"+S4()+"-"+S4()+S4()+S4());   
+}

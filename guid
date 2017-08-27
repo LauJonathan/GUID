@@ -4,7 +4,7 @@
 //JS生成GUID函数,类似.net中的NewID();
 function S4() 
 {   
-   return (((1+Math.random())*0x10000)|0).toString(16).substring(1);   
+   return (((1+Math.random())*0x10000)|0).toString(16).substring(1);   // 去除1是去除16位的4的数，取后面的。| 0可以取整
 }    
 function NewGuid() 
 {   

@@ -1,0 +1,2 @@
+# GUID
+GUID生成
